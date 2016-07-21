@@ -1,0 +1,17 @@
+def pig_latin():
+	pyg = "ay"
+	original = raw_input('Please Enter a Word')
+	word = original.lower()
+	first_letter = word[0]
+	new_word = word[1:len(word)] + "-" + first_letter + pyg
+	
+	if original > 0 and original.isalpha():
+		print new_word
+	elif original == "1" or original == "2":
+		print "An easter Egg! How Quaint! :)"
+	elif original == "Easter Egg":
+		print "You got it! :)"
+	else:
+		print "Please go back and enter a proper word, you nincompoop."
+			
+pig_latin()
